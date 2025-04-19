@@ -1,0 +1,22 @@
+
+.centrado{
+    text-align: center;
+}
+.subrayado{
+    text-decoration:underline;
+}
+
+.linea{
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin: 0 auto;
+}
+
+.espaciador{
+    margin: 20px;
+}
+li a{
+    text-decoration: none;
+    color: inherit;
+}
