@@ -1,12 +1,16 @@
-
 <div class="centrado">
     <h2 class="linea">Indice CSS3 de 0 a 100</h2>
 </div>
 <div class="espaciador"></div>
-<h3 class="#">I. Introducción a CSS</h3>
-<div>
+
+
+
+<!--I. Introducción a CSS-->
+<details>
+    <summary><strong>I. Introducción a CSS</strong></summary>
     <ul>
-        <li><a href="#" onclick="event.preventDefault(); cargarPagina('introduccion/1.html')">¿Qué es CSS y para qué sirve?</a></li>
+        <li><a href="#" onclick="event.preventDefault(); cargarPagina('introduccion/1.html')">¿Qué es CSS y para qué
+                sirve?</a></li>
         <li><a href="#">Historia y evolución de CSS (CSS1, CSS2, CSS3)</a></li>
         <li><a href="#">Diferencias entre HTML y CSS</a></li>
         <li><a href="#">Cómo aplicar CSS en un documento HTML</a>
@@ -19,10 +23,12 @@
         <li><a href="#">Estructura básica de una regla CSS (selector, propiedad, valor)</a></li>
         <li><a href="#">Comentarios en CSS</a></li>
     </ul>
-</div>
+</details>
+<!--fin I. Introducción a CSS-->
 
-<h3 class="#">II. Selectores CSS (El corazón del lenguaje)</h3>
-<div>
+<!--II. Selectores CSS (El corazón del lenguaje)-->
+<details>
+    <summary><strong>II. Selectores CSS (El corazón del lenguaje)</strong></summary>
     <ul>
         <li><a href="#" onclick="event.preventDefault(); cargarPagina('introduccion/1.html')">Selectores básicos:</a>
             <ul>
@@ -30,7 +36,7 @@
                 <li>Por clase</li>
                 <li>Por ID</li>
             </ul>
-            
+
         </li>
         <li><a href="#">Selectores combinadores:</a>
             <ul>
@@ -39,12 +45,12 @@
                 <li>Hermano siguiente (+)</li>
                 <li>Hermanos generales (~)</li>
             </ul>
-            
+
         </li>
         <li><a href="#">Selectores de atributo</a></li>
         <li><a href="#">Selectores avanzados:</a>
             <ul>
-                <li>:first-child  </li>
+                <li>:first-child </li>
                 <li>:last-child</li>
                 <li>:nth-child()</li>
                 <li>:not()</li>
@@ -55,6 +61,262 @@
         <li><a href="#">Selectores universales (*)</a></li>
         <li><a href="#">Selectores de pseudoelementos:</a></li>
     </ul>
-</div>
+
+</details>
+<!--Fin II. Selectores CSS (El corazón del lenguaje)-->
+
+<!--III. Propiedades de Estilo Básicas-->
+<details>
+    <summary><strong>III. Propiedades de Estilo Básicas</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Colores</a>
+            <ul>
+                <li>Nombres</li>
+                <li>HEX</li>
+                <li>RGB</li>
+                <li>RGBA</li>
+                <li>HSL</li>
+                <li>HSLA</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Tipografía:</a>
+            <ul>
+                <li>font-family, font-size, font-weight</li>
+                <li>line-height, letter-spacing, word-spacing</li>
+                <li>text-align, text-decoration, text-transform</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Fondos:</a>
+            <ul>
+                <li>background-color</li>
+                <li>background-image, background-size, background-repeat</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Bordes:</a>
+            <ul>
+                <li>border, border-radius, border-style, border-width</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Espaciado:</a>
+            <ul>
+                <li>margin, padding, box-sizing</li>
+            </ul>
+        </li>
+    </ul>
+</details>
+<!--Fin III. Propiedades de Estilo Básicas-->
+
+
+<!--IV. Modelo de Caja (Box Model)-->
+<details>
+    <summary><strong>IV. Modelo de Caja (Box Model)</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Explicación del modelo de caja</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Diferencia entre content-box y border-box</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Overflow y visibilidad</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Tamaños: width, height, max/min-width, etc.</a></li>
+    </ul>
+</details>
+<!--Fin IV. Modelo de Caja (Box Model)-->
+
+
+<!--V. Posicionamiento y Display-->
+<details>
+    <summary><strong>V. Posicionamiento y Display</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Propiedad display</a>
+            <ul>
+                <li>block, inline, inline-block, none</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Propiedad position</a>
+            <ul>
+                <li>static, relative, absolute, fixed, sticky</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Propiedad z-index</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Uso de top, right, bottom, left</a></li>
+    </ul>
+</details>
+<!--Fin V. Posicionamiento y Display-->
+
+
+<!--VI. Flexbox (CSS Flexible Box Layout)-->
+<details>
+    <summary><strong>VI. Flexbox (CSS Flexible Box Layout)</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Introducción a Flexbox</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Contenedor:</a>
+            <ul>
+                <li>display: flex, flex-direction, flex-wrap, justify-content, align-items, align-content</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Ítems:</a>
+            <ul>
+                <li>flex-grow, flex-shrink, flex-basis, flex, align-self, order</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Casos prácticos: centrar elementos, layouts, menús</a></li>
+    </ul>
+</details>
+<!--Fin VI. Flexbox (CSS Flexible Box Layout)-->
+
+<!--VII. Grid Layout (Diseño de cuadrícula)-->
+<details>
+    <summary><strong>VII. Grid Layout (Diseño de cuadrícula)</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Introducción a CSS Grid</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Contenedor:</a>
+            <ul>
+                <li>display: grid, grid-template-columns, grid-template-rows</li>
+                <li>gap, grid-auto-flow, justify-items, align-items, etc.</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Ítems:</a>
+            <ul>
+                <li>grid-column, grid-row, grid-area</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Grid implícito vs. explícito</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Layouts avanzados con Grid</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Grid vs Flexbox (cuándo usar cada uno)</a></li>
+    </ul>
+</details>
+<!--Fin VII. Grid Layout (Diseño de cuadrícula)-->
+
+<!--VIII. Estilos Responsivos y Media Queries-->
+<details>
+    <summary><strong>VIII. Estilos Responsivos y Media Queries</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Introducción al diseño responsive</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">@media queries: sintaxis y uso</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Breakpoints comunes</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Diseño Mobile First vs Desktop First</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Unidades relativas: %, em, rem, vh, vw</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Técnicas avanzadas de responsive</a></li>
+    </ul>
+</details>
+<!--Fin VIII. Estilos Responsivos y Media Queries-->
+
+<!--IX. Animaciones y Transiciones-->
+<details>
+    <summary><strong>IX. Animaciones y Transiciones</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Transiciones (transition)</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Transformaciones (transform)</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Animaciones con @keyframes</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">animation-name, duration, timing-function, iteration-count, etc.</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Estados interactivos: :hover, :active, :focus</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Animaciones en pseudoelementos</a></li>
+    </ul>
+</details>
+<!--Fin IX. Animaciones y Transiciones-->
+
+<!--X. Variables y Custom Properties-->
+<details>
+    <summary><strong>X. Variables y Custom Properties</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Declaración de variables en CSS (--nombre)</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Uso con var()</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Variables globales vs locales</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Ventajas y buenas prácticas</a></li>
+    </ul>
+</details>
+<!--Fin X. Variables y Custom Properties-->
+
+<!--XI. Funciones y Utilidades Avanzadas-->
+<details>
+    <summary><strong>XI. Funciones y Utilidades Avanzadas</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">calc(), clamp(), min(), max()</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">attr() para contenido dinámico</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Uso de content con pseudoelementos</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Scroll Snap</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">will-change, contain, isolation</a></li>
+    </ul>
+</details>
+<!--Fin XI. Funciones y Utilidades Avanzadas-->
+
+
+<!--XII. Buenas Prácticas y Mantenimiento-->
+<details>
+    <summary><strong>XII. Buenas Prácticas y Mantenimiento</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Organización del código CSS</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Convenciones de nombres: BEM, OOCSS, SMACSS</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Uso de reseteos (normalize.css, reset.css)</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Separación de responsabilidades: CSS modular</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Evitar especificidad excesiva</a></li>
+    </ul>
+</details>
+<!--Fin XII. Buenas Prácticas y Mantenimiento-->
+
+<!--XIII. Herramientas Modernas y Preprocesadores-->
+<details>
+    <summary><strong>XIII. Herramientas Modernas y Preprocesadores</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Preprocesadores CSS (Sass, SCSS, Less)</a>
+            <ul>
+                <li>Variables, mixins, funciones, anidación</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">PostCSS y autoprefixer</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Frameworks CSS:</a>
+            <ul>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Foundation</li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">CSS-in-JS y estilos en frameworks como React</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Linting y herramientas de validación (stylelint)</a></li>
+    </ul>
+</details>
+<!--Fin XIII. Herramientas Modernas y Preprocesadores-->
+
+<!--XIV. Accesibilidad y Performance-->
+<details>
+    <summary><strong>XIV. Accesibilidad y Performance</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Buenas prácticas de accesibilidad visual</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Contraste, fuentes legibles, foco visible</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Optimización del rendimiento CSS</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Carga crítica de CSS (critical CSS)</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Minificación y organización para producción</a></li>
+    </ul>
+</details>
+<!--Fin XIV. Accesibilidad y Performance-->
+
+<!--XV. Proyectos Reales y Ejercicios-->
+<details>
+    <summary><strong>XV. Proyectos Reales y Ejercicios</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Maquetar un landing page</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Crear un blog responsive</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Diseñar un dashboard con Grid y Flexbox</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Animaciones interactivas</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Portafolio personal usando todo lo aprendido</a></li>
+    </ul>
+</details>
+<!--Fin XV. Proyectos Reales y Ejercicios-->
+
+<!--XVI. Recursos y Aprendizaje Continuo-->
+<details>
+    <summary><strong>XVI. Recursos y Aprendizaje Continuo</strong></summary>
+    <ul>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Documentación oficial (MDN, W3C)</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Repositorios y boilerplates CSS</a></li>
+        <li><a href="#" onclick="cargarPagina('css/colores.html')">Comunidades y foros (CSS-Tricks, Dev.to, Codepen)</a></li>
+        <li><a href="#" onclick="cargarPagina('css/selectores.html')">Retos diarios de CSS (100 Days CSS, FrontendMentor)</a></li>
+    </ul>
+</details>
+<!--Fin XVI. Recursos y Aprendizaje Continuo-->
+
+
+
+
+
+
+
 
 
