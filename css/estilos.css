@@ -29,3 +29,9 @@ li a{
    height: auto;
    object-fit: cover;
 }
+
+p {
+    line-height: 1.6; /* mejora el espaciado entre líneas */
+    word-break: break-word; /* para que no se desborde en móviles */
+    text-align: justify;
+  }
