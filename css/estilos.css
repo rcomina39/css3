@@ -26,7 +26,6 @@ li a{
 
 .imagen1{
    max-width: 80%;
-   height: auto;
    object-fit: cover;
 }
 
