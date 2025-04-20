@@ -51,7 +51,16 @@ function navegarASeccion(select) {
 
 
 
-  
+
+
+document.querySelector('.acordeon-temas').addEventListener('change', function () {
+  const destino = document.querySelector(this.value);
+  if (destino) {
+    destino.scrollIntoView({ behavior: 'smooth' });
+  }
+  this.selectedIndex = 0;
+});
+
 
 
 

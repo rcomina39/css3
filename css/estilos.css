@@ -14,7 +14,7 @@
 }
 
 .espaciador{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 a{
     text-decoration: none;
@@ -165,7 +165,8 @@ p {
   color: red;
   text-decoration: none;
   z-index: 1000;
-  transition: transform 0.2s ease, opacity 0.3s ease;
+  opacity: 0.3;
+  transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
 .flecha-subir:hover {
