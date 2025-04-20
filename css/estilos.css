@@ -70,18 +70,65 @@ p {
     }
   }
 
+/* TIPOGRAFÍA BASE PARA ESCRITORIO */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* RESPONSIVE: AJUSTES PARA MÓVILES */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+
+
 
   /* ACORDEON*/
  /* CONTENEDOR DEL SELECT */
-.contenedor-temas {
+ .contenedor-temas {
+  display: inline-block;
   position: absolute;
   top: 12px;
-  right: 20px;
+  right: 0;
   z-index: 1000;
-  display: inline-block;
 }
 
-/* SELECT */
+/* Estilo para el <select> */
 .acordeon-temas {
   padding: 6px 10px;
   border-radius: 6px;
@@ -94,18 +141,35 @@ p {
   max-width: 250px;
 }
 
-/* RESPONSIVE: en móviles */
+/* 📱 AJUSTE PARA MÓVILES */
 @media (max-width: 600px) {
   .contenedor-temas {
-    position: relative;          /* Lo volvemos parte del flujo */
-    width: 100%;                 /* Ocupa todo el ancho disponible */
+    position: relative; /* ✅ Elimina posición absoluta */
     display: flex;
-    justify-content: center;    /* Centrado horizontal */
-    margin-top: 10px;
+    justify-content: center; /* ✅ Centrado horizontal */
+    width: 100%;
+    margin-top: 1rem; /* Espaciado si lo deseas */
   }
 
   .acordeon-temas {
-    width: 90%;                 /* Que se vea bien en pantallas pequeñas */
-    max-width: none;
+    width: 90%;        /* Para que no se desborde */
+    max-width: 300px;
   }
 }
+
+.flecha-subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 48px;
+  color: red;
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.flecha-subir:hover {
+  transform: scale(1.2);
+}
+
+
