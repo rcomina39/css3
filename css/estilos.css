@@ -14,9 +14,9 @@
 }
 
 .espaciador{
-    margin: 50px;
+    margin-bottom: 50px;
 }
-li a{
+a{
     text-decoration: none;
     color: inherit;
 }
@@ -69,3 +69,43 @@ p {
       max-width: 100%;
     }
   }
+
+
+  /* ACORDEON*/
+ /* CONTENEDOR DEL SELECT */
+.contenedor-temas {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  z-index: 1000;
+  display: inline-block;
+}
+
+/* SELECT */
+.acordeon-temas {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: #8d8989;
+  cursor: pointer;
+  width: auto;
+  max-width: 250px;
+}
+
+/* RESPONSIVE: en móviles */
+@media (max-width: 600px) {
+  .contenedor-temas {
+    position: relative;          /* Lo volvemos parte del flujo */
+    width: 100%;                 /* Ocupa todo el ancho disponible */
+    display: flex;
+    justify-content: center;    /* Centrado horizontal */
+    margin-top: 10px;
+  }
+
+  .acordeon-temas {
+    width: 90%;                 /* Que se vea bien en pantallas pequeñas */
+    max-width: none;
+  }
+}

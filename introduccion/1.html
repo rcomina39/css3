@@ -1,6 +1,19 @@
 
 <!--INCIO DE LA PAGINA-->
 
+<!-- Menú desplegable de temas (tipo índice) -->
+<div style="position: relative;">
+    <div class="contenedor-temas">
+      <select class="acordeon-temas" onchange="navegarASeccion(this)">
+        <option disabled selected>Selecciona un Tema</option>
+        <option value="#intro">Historia y evolución de CSS (CSS1, CSS2, CSS3)</option>
+        <option value="#punto_A3">Diferencias entre HTML y CSS</option>
+        <option value="#selectores">Cómo aplicar CSS en un documento HTML</option>
+      </select>
+    </div>
+  </div>
+<br><br><br>
+
 <h2>🎨¿Qué es CSS y para qué sirve?</h2>
 
 <p>CSS <span class="rojo">(Cascading Style Sheets o Hojas de Estilo en Cascada)</span> es un lenguaje de diseño utilizado para describir la presentación de un documento HTML. Es decir, CSS se encarga de cómo se ven los elementos de una página web.</p>
@@ -134,10 +147,14 @@
 
 
 
+<!-- Diferencias entre HTML y CSS --->
+<div id="punto_A3" style="position: relative; top: -80px;"></div>
+<div id="punto_A3">
+    <h2>🧩 Diferencias entre HTML y CSS – Explicación Profesional y Completa</h2>
 
+</div>
 
-
-
+<!-- fin Diferencias entre HTML y CSS --->
 
 
 
@@ -152,3 +169,15 @@
         Siguiente Capítulo ➡
     </button>
 </div>
+
+
+<!-- JS para desplazamiento suave -->
+<script>
+    document.querySelector('.acordeon-temas').addEventListener('change', function () {
+      const destino = document.querySelector(this.value);
+      if (destino) {
+        destino.scrollIntoView({ behavior: 'smooth' });
+      }
+      this.selectedIndex = 0;
+    });
+  </script>
