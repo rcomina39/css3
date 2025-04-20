@@ -41,3 +41,31 @@ p {
     word-break: break-word; /* para que no se desborde en móviles */
     text-align: justify;
   }
+
+
+/*BOTONES DE PIE DE PAGINA */
+
+  .navegacion-botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .navegacion-botones button {
+    flex: 1 1 auto;
+    max-width: 48%;
+  }
+
+  @media (max-width: 600px) {
+    .navegacion-botones {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .navegacion-botones button {
+      max-width: 100%;
+    }
+  }
