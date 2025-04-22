@@ -173,4 +173,6 @@ p {
   transform: scale(1.2);
 }
 
-
+.container-footer{
+    text-align:center;
+}
